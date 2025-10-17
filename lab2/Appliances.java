@@ -1,6 +1,6 @@
 package lab2;
 
-abstract class Appliances {
+public abstract class Appliances {
     protected String brand;
     protected String model;
     protected double price;
