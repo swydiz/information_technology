@@ -10,13 +10,13 @@ public class Reverse {
         System.out.println(revW(arr));
     } 
 
-    public static String revW(String[] arr) {
-        String ans = "";
+    public static StringBuilder revW(String[] arr) {
+        StringBuilder ans = new StringBuilder();
         for (int i = arr.length - 1; i >= 0; i--) {
             if (i == 0) {
-                return ans += arr[i];
+                return ans.append(arr[i]);
             }
-            ans += arr[i] + " ";
+            ans.append(arr[i]).append(" ");
         }
         return ans;
     }

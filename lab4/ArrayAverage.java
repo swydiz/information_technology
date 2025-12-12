@@ -2,11 +2,11 @@ package lab4;
 
 public class ArrayAverage {
     public static void main(String[] args) {
-        Object[] arr = {1, 2, "hello", 4, 5};
+        Object[] arr = {1, 2, 6, 4, 5};
         int sum = 0;
         int count = 0;
         try {
-            for (int i = 0; i <= arr.length; i++) { // намеренно выходим за границы
+            for (int i = 0; i < arr.length; i++) {
                 if (arr[i] instanceof Integer) {
                     sum += (int) arr[i];
                     count++;

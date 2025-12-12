@@ -39,19 +39,19 @@ public class File {
 
                 try {
                     second.write(s);
+                    
 
                 } catch (IOException e) {
                     System.err.println("Ошибка записи в файл: " + e.getMessage());
                     break;
                 }
             }
-            System.out.println("Данные успешно скопированы");
+            
 
         } finally {
             try {
                 if (first != null) {
                     first.close();
-                    // first.read();
                 }
             } catch (IOException e) {
                 System.err.println("Ошибка при закрытии исходного файла: " + e.getMessage());
